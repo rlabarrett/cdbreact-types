@@ -8,7 +8,7 @@ export interface ColProps extends React.HTMLProps<any>{
     middle: boolean
     size: string
     sm: string
-    tag?(): any | string
+    tag?: () => (any | void) | string
     top: boolean
     xl: string
     xs: string

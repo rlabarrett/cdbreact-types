@@ -11,9 +11,9 @@ export interface ButtonProps extends React.HTMLProps<any>{
     download?: string;
     endingText?: string;
     flat?: boolean;
-    innerRef?(): any | string;
+    innerRef?: () => (any | void) | string;
     label?: string;
-    onClick?(): any | string;
+    onClick?: () => (any | void) | string;
     role?: string;
     size?: string;
     social?: string;

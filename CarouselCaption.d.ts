@@ -3,7 +3,7 @@ import * as React from 'react';
 export interface CarouselCaptionProps extends React.HTMLProps<any>{
     children?: any,
     className?: string,
-    tag?(): any | string,
+    tag?: () => (any | void) | string,
 }
 
 declare class CarouselCaption extends React.Component<CarouselCaptionProps, any> {}

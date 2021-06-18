@@ -7,7 +7,7 @@ export interface CarouselControlProps extends React.HTMLProps<any>{
     iconRight?: boolean
     multiItem?: boolean
     onClick?: any
-    tag?(): any | string
+    tag?: () => (any | void) | string
     testimonial?: boolean
 }
 

@@ -12,7 +12,7 @@ export interface AnimationProps extends React.HTMLProps<any>{
     onAnimationStart?(): any
     reveal?: boolean
     style?: any
-    tag?(): any | string
+    tag?: () => (any | void) | string
     type?: string
 }
 

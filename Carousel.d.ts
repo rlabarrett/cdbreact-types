@@ -12,7 +12,7 @@ export interface CarouselProps extends React.HTMLProps<any>{
     showControls?: boolean
     showIndicators?: boolean
     slide?: boolean
-    tag?(): any | string
+    tag?: () => (any | void) | string
     testimonial?: boolean
     thumbnails?: boolean
 }
