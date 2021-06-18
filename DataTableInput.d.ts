@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DataTableInputProps extends React.HTMLProps<any>{
     barReverse?: boolean
     label?: string
     materialSearch?: boolean
@@ -8,7 +8,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     value?: string
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DataTableInput extends React.Component<DataTableInputProps, any> {}
 
 
-export default DataTable
+export default DataTableInput

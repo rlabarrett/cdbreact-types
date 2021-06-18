@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DataTableInfoProps extends React.HTMLProps<any>{
     activePage: number
     entries: number
     filteredRows: [any]
@@ -10,7 +10,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     label?: [string]
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DataTableInfo extends React.Component<DataTableInfoProps, any> {}
 
 
-export default DataTable
+export default DataTableInfo

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DataTableHeadProps extends React.HTMLProps<any>{
     sorted: boolean
     color?: string
     columns?: [object]
@@ -11,7 +11,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     textWhite?: boolean
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DataTableHead extends React.Component<DataTableHeadProps, any> {}
 
 
-export default DataTable
+export default DataTableHead

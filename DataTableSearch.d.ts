@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DataTableSearchProps extends React.HTMLProps<any>{
     handleSearchChange(): any
     search: string
     searching: boolean
@@ -9,7 +9,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     materialSearch?: boolean
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DataTableSearch extends React.Component<DataTableSearchProps, any> {}
 
 
-export default DataTable
+export default DataTableSearch

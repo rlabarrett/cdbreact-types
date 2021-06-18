@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DataTableEntriesProps extends React.HTMLProps<any>{
     displayEntries: boolean
     entries: number
     entriesArr: [number]
@@ -11,7 +11,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     proSelect?: boolean
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DataTableEntries extends React.Component<DataTableEntriesProps, any> {}
 
 
-export default DataTable
+export default DataTableEntries

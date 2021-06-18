@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DataTablePaginationProps extends React.HTMLProps<any>{
     activePage: number
     changeActivePage(): any
     label: [string]
@@ -8,7 +8,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     pagesAmount: number
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DataTablePagination extends React.Component<DataTablePaginationProps, any> {}
 
 
-export default DataTable
+export default DataTablePagination
