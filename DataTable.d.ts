@@ -25,9 +25,9 @@ export interface DataTableProps extends React.HTMLProps<any>{
     maxHeight: string
     noBottomColumns: boolean
     noRecordsFoundLabel: string
-    onPageChange?(): any
-    onSearch?(): any
-    onSort?(): any
+    onPageChange: () => (any | void)
+    onSearch: () => (any | void)
+    onSort: () => (any | void)
     order: Array<string>
     pagesAmount: number
     paginationLabel: Array<string>

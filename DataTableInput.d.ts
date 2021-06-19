@@ -4,7 +4,7 @@ export interface DataTableInputProps extends React.HTMLProps<any>{
     barReverse?: boolean
     label?: string
     materialSearch?: boolean
-    onChange?(): any
+    onChange: () => (any | void)
     value?: string
 }
 

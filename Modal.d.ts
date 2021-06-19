@@ -16,8 +16,8 @@ export interface ModalProps extends React.HTMLProps<any>{
     fade?: boolean
     frame?: boolean
     fullHeight?: boolean
-    hiddenModal?(): any
-    hideModal?(): any
+    hiddenModal: () => (any | void)
+    hideModal: () => (any | void)
     id?: string
     inline?: boolean
     isOpen?: boolean
@@ -30,11 +30,11 @@ export interface ModalProps extends React.HTMLProps<any>{
     overflowScroll?: boolean
     position?: string
     role?: string
-    showModal?(): any
+    showModal: () => (any | void)
     side?: boolean
     size?: string
     tabIndex?: string
-    toggle?(): any
+    toggle: () => (any | void)
     wrapClassName?: string
     wrapperStyles?: object
     zIndex?: number | string

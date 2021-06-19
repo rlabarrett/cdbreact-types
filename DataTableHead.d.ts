@@ -4,7 +4,7 @@ export interface DataTableHeadProps extends React.HTMLProps<any>{
     sorted: boolean
     color?: string
     columns?: [object]
-    handleSort?(): any
+    handleSort: () => (any | void)
     scrollX?: boolean
     scrollY?: boolean
     sortable?: boolean

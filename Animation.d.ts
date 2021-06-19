@@ -7,9 +7,9 @@ export interface AnimationProps extends React.HTMLProps<any>{
     delay?: string
     duration?: string | number
     infinite?: boolean
-    onAnimationEnd?(): any
-    onAnimationIteration?(): any
-    onAnimationStart?(): any
+    onAnimationEnd?: () => (any | void)
+    onAnimationIteration?: () => (any | void)
+    onAnimationStart?: () => (any | void)
     reveal?: boolean
     style?: any
     tag?: () => (any | void) | string

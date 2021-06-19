@@ -10,7 +10,7 @@ export interface InputProps extends React.HTMLProps<any>{
     filled?: boolean
     focused?: boolean | string
     gap?: boolean
-    getValue?(): any
+    getValue: () => (any | void)
     group?: boolean
     hint?: string
     height?: string
@@ -22,20 +22,20 @@ export interface InputProps extends React.HTMLProps<any>{
     iconSize?: string
     id?: string
     indeterminate?: boolean
-    inputRef?(): object | any
+    inputRef: () => (any | void) | object
     isControlled?: boolean
     label?: string | number | object | boolean
     labelClass?: string
     labelId?: string
     labelStyles?: object
     noTag?: boolean
-    onBlur?(): any
-    onChange?(): any
-    onFocus?(): any
-    onIconClick?(): any
-    onIconMouseEnter?(): any
-    onIconMouseLeave?(): any
-    onInput?(): any
+    onBlur: () => (any | void)
+    onChange: () => (any | void)
+    onFocus: () => (any | void)
+    onIconClick: () => (any | void)
+    onIconMouseEnter: () => (any | void)
+    onIconMouseLeave: () => (any | void)
+    onInput: () => (any | void)
     material?: boolean
     size?: string
     success?: string

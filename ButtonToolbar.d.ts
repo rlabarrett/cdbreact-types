@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface ButtonToolbarProps extends React.HTMLProps<any>{
     "aria-label"?: string
     children?: any
     className?: string
     role?: string
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class ButtonToolbar extends React.Component<ButtonToolbarProps, any> {}
 
 
-export default DataTable
+export default ButtonToolbar

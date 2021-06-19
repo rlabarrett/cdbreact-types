@@ -7,7 +7,7 @@ export interface DropDownItemProps extends React.HTMLProps<any>{
     disabled?: boolean
     divider?: boolean
     header?: boolean
-    onClick?(): any
+    onClick: () => (any | void)
     tag?: () => (any | void) | string
     toggle?: boolean
 }

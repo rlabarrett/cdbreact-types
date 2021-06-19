@@ -9,15 +9,15 @@ export interface InputGroupProps extends React.HTMLProps<any>{
     className: string
     containerClassName: string
     containerId: string
-    getValue?(): any
+    getValue: () => (any | void)
     hint: string
     id: string
     inputs: any
     label: string
     labelClassName: string
     material: boolean
-    onChange?(): any
-    onIconClick?(): any
+    onChange: () => (any | void)
+    onIconClick: () => (any | void)
     prepend: any
     prependClassName: string
     size: string

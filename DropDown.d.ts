@@ -6,7 +6,7 @@ export interface DropDownProps extends React.HTMLProps<any>{
     dropright?: boolean
     dropup?: boolean
     isOpen?: boolean
-    toogle?(): any
+    toogle: () => (any | void)
     tag?: string
 }
 

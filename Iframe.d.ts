@@ -7,9 +7,9 @@ export interface IframeProps extends React.HTMLProps<any>{
     height?: number
     id?: string
     name?: string
-    onLoad?(): any
-    onMouseOut?(): any
-    onMouseOver?(): any
+    onLoad: () => (any | void)
+    onMouseOut: () => (any | void)
+    onMouseOver: () => (any | void)
     ratio?: string
     sandbox?: string
     styles?: object

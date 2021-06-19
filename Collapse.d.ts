@@ -7,8 +7,8 @@ export interface CollapseProps extends React.HTMLProps<any>{
     id: string
     isOpen: string | boolean
     navbar: boolean
-    onClosed?(): any
-    onOpened?(): any
+    onClosed?: () => (any | void)
+    onOpened?: () => (any | void)
 }
 
 declare class Collapse extends React.Component<CollapseProps, any> {}

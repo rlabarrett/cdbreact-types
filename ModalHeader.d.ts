@@ -5,7 +5,7 @@ export interface ModalHeaderProps extends React.HTMLProps<any>{
     className?: string
     closeAriaLabel?: string
     tag?: () => (any | void) | string
-    toggle?(): any
+    toggle: () => (any | void)
 }
 
 declare class ModalHeader extends React.Component<ModalHeaderProps, any> {}

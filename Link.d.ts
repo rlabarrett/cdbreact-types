@@ -6,8 +6,8 @@ export interface LinkProps extends React.HTMLProps<any>{
     className?: string
     disabled?: boolean
     to?: string
-    onMouseUp?(): any
-    onTouchStart?(): any
+    onMouseUp: () => (any | void)
+    onTouchStart: () => (any | void)
 }
 
 declare class Link extends React.Component<LinkProps, any> {}

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {Color} from "./index";
 
-export interface DataTableProps extends React.HTMLProps<any>{
+export interface DropDownMenuProps extends React.HTMLProps<any>{
     className?: string
     colors?: Color
-    onClose?(): any
-    onClosed?(): any
+    onClose?: () => (any | void)
+    onClosed?: () => (any | void)
     tag?: string
     dropleft?: boolean
     dropright?: boolean
@@ -13,7 +13,7 @@ export interface DataTableProps extends React.HTMLProps<any>{
     dropdown?: boolean
 }
 
-declare class DataTable extends React.Component<DataTableProps, any> {}
+declare class DropDownMenu extends React.Component<DropDownMenuProps, any> {}
 
 
-export default DataTable
+export default DropDownMenu

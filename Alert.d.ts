@@ -3,8 +3,8 @@ import * as React from 'react';
 export interface AlertProps extends React.HTMLProps<any>{
     className?: string
     color?: string
-    onClose?(): any
-    onClosed?(): any
+    onClose?: () => (any | void)
+    onClosed?: () => (any | void)
     tag?: string
 }
 
